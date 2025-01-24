@@ -10,6 +10,13 @@ import TempleCommittee from './TempleCommittee';
 import NinamTemple from './NinamTemple';
 import AnnualPrograms from './AnnualPrograms';
 import ContactUs from './ContactUs';
+import PostManager from './PostManager';
+import PostDetails from './PostDetails';
+import AdminDailyPost from './AdminDailyPost';
+import AdminPostDetails from './AdminPostDetails';
+import AdminEventManager from './AdminEventManager';
+import EventDetails from './AdminEventDetails';
+import Donation from './Donation';
 
 
 
@@ -51,6 +58,38 @@ const customRounter = createBrowserRouter([
                 path: '/contact', // Default route
                 element: <ContactUs />
             },
+            {
+                path: "/post", 
+                element: <PostManager />,
+                }, 
+                {
+                  path: "/post/:id", 
+                 element: < PostDetails />,
+                 },
+                {
+                  path: "/adminpost", 
+                  element: < AdminDailyPost />,
+                 },  
+                 {
+                  path: "/adminpost/:id", 
+                  element: < AdminPostDetails/>,
+                 }, 
+                 {
+                  path: "/adminevent", 
+                  element: < AdminEventManager/>,
+                 },        
+                 {
+                    path: "/adminevent", 
+                    element: < AdminEventManager/>,
+                   }, 
+                   {
+                    path: "/event/:eventId", 
+                    element: < EventDetails/>,
+                   },  
+                   {
+                    path: "/donation", 
+                    element: < Donation/>,
+                   },             
             
         ] 
     }

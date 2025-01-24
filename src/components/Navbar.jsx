@@ -206,10 +206,10 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="temple"
+                    to="/adminevent"
                     className="block px-4 py-2 text-gray-700 hover:bg-orange-100 hover:text-orange-600"
                   >
-                    Architecture
+                    AdminEvent
                   </Link>
                 </li>
               </ul>
@@ -217,18 +217,23 @@ const Navbar = () => {
           </li>
        
           <li>
-            <Link to="/comitee" className="hover:text-orange-500 font-bold">
-              Yatra Committee
+            <Link to="/post" className="hover:text-orange-500 font-bold">
+              Daily Darshan
             </Link>
           </li>
           <li>
-            <Link to="/schedule" className="hover:text-orange-500 font-bold">
-            Daily schedule
+            <Link to="/adminpost" className="hover:text-orange-500 font-bold">
+           Admin Post
             </Link>
           </li>
           <li>
             <Link to="/annual" className="hover:text-orange-500 font-bold">
               Upcoming Events
+            </Link>
+          </li>
+          <li>
+            <Link to="/adminevent" className="hover:text-orange-500 font-bold">
+             Admin Events
             </Link>
           </li>
           <li>
